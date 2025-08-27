@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDVQM3QpU_f3dk04L4K5h3TCPngn91smqM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1073755732886</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mealplanner.app</string>
+	<key>PROJECT_ID</key>
+	<string>meal-planner-g9dtkv</string>
+	<key>STORAGE_BUCKET</key>
+	<string>meal-planner-g9dtkv.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1073755732886:ios:8e9f7c28d9b3460a4c7bb7</string>
+</dict>
+</plist>
