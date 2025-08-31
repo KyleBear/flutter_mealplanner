@@ -14,6 +14,8 @@ export '/pages/profile/edit_profile/edit_profile_widget.dart'
 export '/pages/profile/about_us/about_us_widget.dart' show AboutUsWidget;
 export '/pages/profile/eating_preferences/eating_preferences_widget.dart'
     show EatingPreferencesWidget;
+export '/pages/profile/health_profile/health_profile_widget.dart'
+    show HealthProfileWidget;
 export '/pages/profile/support_center/support_center_widget.dart'
     show SupportCenterWidget;
 export '/pages/onboarding/forgot_password/forgot_password_widget.dart'

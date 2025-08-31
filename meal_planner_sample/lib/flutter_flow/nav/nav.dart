@@ -154,6 +154,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
               builder: (context, params) => const EatingPreferencesWidget(),
             ),
             FFRoute(
+              name: 'HealthProfile',
+              path: 'health-profile',
+              requireAuth: true,
+              builder: (context, params) => const HealthProfileWidget(),
+            ),
+            FFRoute(
               name: 'SupportCenter',
               path: 'support-center',
               requireAuth: true,

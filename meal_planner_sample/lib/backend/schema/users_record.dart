@@ -60,6 +60,21 @@ class UsersRecord extends FirestoreRecord {
   List<String> get ingredientDislikes => _ingredientDislikes ?? const [];
   bool hasIngredientDislikes() => _ingredientDislikes != null;
 
+  // "health_profile" field.
+  Map<String, dynamic>? _healthProfile;
+  Map<String, dynamic> get healthProfile => _healthProfile ?? const {};
+  bool hasHealthProfile() => _healthProfile != null;
+
+  // "dietary_restrictions" field.
+  List<String>? _dietaryRestrictions;
+  List<String> get dietaryRestrictions => _dietaryRestrictions ?? const [];
+  bool hasDietaryRestrictions() => _dietaryRestrictions != null;
+
+  // "preferences" field.
+  Map<String, dynamic>? _preferences;
+  Map<String, dynamic> get preferences => _preferences ?? const {};
+  bool hasPreferences() => _preferences != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -70,6 +85,9 @@ class UsersRecord extends FirestoreRecord {
     _diet = snapshotData['diet'] as String?;
     _allergens = getDataList(snapshotData['allergens']);
     _ingredientDislikes = getDataList(snapshotData['ingredient_dislikes']);
+    _healthProfile = snapshotData['health_profile'] as Map<String, dynamic>?;
+    _dietaryRestrictions = getDataList(snapshotData['dietary_restrictions']);
+    _preferences = snapshotData['preferences'] as Map<String, dynamic>?;
   }
 
   static CollectionReference get collection =>
@@ -113,6 +131,11 @@ Map<String, dynamic> createUsersRecordData({
   DateTime? createdTime,
   String? phoneNumber,
   String? diet,
+  List<String>? allergens,
+  List<String>? ingredientDislikes,
+  Map<String, dynamic>? healthProfile,
+  List<String>? dietaryRestrictions,
+  Map<String, dynamic>? preferences,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -123,6 +146,11 @@ Map<String, dynamic> createUsersRecordData({
       'created_time': createdTime,
       'phone_number': phoneNumber,
       'diet': diet,
+      'allergens': allergens,
+      'ingredient_dislikes': ingredientDislikes,
+      'health_profile': healthProfile,
+      'dietary_restrictions': dietaryRestrictions,
+      'preferences': preferences,
     }.withoutNulls,
   );
 
@@ -135,6 +163,7 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
   @override
   bool equals(UsersRecord? e1, UsersRecord? e2) {
     const listEquality = ListEquality();
+    const mapEquality = MapEquality();
     return e1?.email == e2?.email &&
         e1?.displayName == e2?.displayName &&
         e1?.photoUrl == e2?.photoUrl &&
@@ -143,7 +172,10 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.diet == e2?.diet &&
         listEquality.equals(e1?.allergens, e2?.allergens) &&
-        listEquality.equals(e1?.ingredientDislikes, e2?.ingredientDislikes);
+        listEquality.equals(e1?.ingredientDislikes, e2?.ingredientDislikes) &&
+        mapEquality.equals(e1?.healthProfile, e2?.healthProfile) &&
+        listEquality.equals(e1?.dietaryRestrictions, e2?.dietaryRestrictions) &&
+        mapEquality.equals(e1?.preferences, e2?.preferences);
   }
 
   @override
@@ -156,7 +188,10 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.phoneNumber,
         e?.diet,
         e?.allergens,
-        e?.ingredientDislikes
+        e?.ingredientDislikes,
+        e?.healthProfile,
+        e?.dietaryRestrictions,
+        e?.preferences
       ]);
 
   @override
