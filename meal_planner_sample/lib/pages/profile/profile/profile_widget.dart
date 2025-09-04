@@ -612,6 +612,282 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                        ],
                                      ),
                                    ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_FoodDatabaseTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'FoodDatabaseTile_navigate_to');
+
+                                       context.pushNamed('FoodDatabase');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.restaurant_menu_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '식품 데이터베이스',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_EnhancedDashboardTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'EnhancedDashboardTile_navigate_to');
+
+                                       context.pushNamed('EnhancedDashboard');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.calendar_today_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '식단 캘린더',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_NotificationSettingsTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'NotificationSettingsTile_navigate_to');
+
+                                       context.pushNamed('NotificationSettings');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.notifications_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '알림 설정',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_HealthStatsTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'HealthStatsTile_navigate_to');
+
+                                       context.pushNamed('HealthStats');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.analytics_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '건강 통계',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
                                   if ((columnCompanyInformationRecord?.name !=
                                               null &&
                                           columnCompanyInformationRecord

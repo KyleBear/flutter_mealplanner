@@ -22,6 +22,14 @@ export '/pages/recommendations/calorie_recommendation/calorie_recommendation_wid
     show CalorieRecommendationWidget;
 export '/pages/dashboard/nutrition_dashboard/nutrition_dashboard_widget.dart'
     show NutritionDashboardWidget;
+export '/pages/food/food_database/food_database_widget.dart'
+    show FoodDatabaseWidget;
+export '/pages/meals/dashboard/enhanced_dashboard_widget.dart'
+    show EnhancedDashboardWidget;
+export '/pages/settings/notification_settings/notification_settings_widget.dart'
+    show NotificationSettingsWidget;
+export '/pages/profile/health_stats/health_stats_widget.dart'
+    show HealthStatsWidget;
 export '/pages/profile/support_center/support_center_widget.dart'
     show SupportCenterWidget;
 export '/pages/onboarding/forgot_password/forgot_password_widget.dart'

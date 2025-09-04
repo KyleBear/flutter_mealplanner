@@ -177,6 +177,30 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
                requireAuth: true,
                builder: (context, params) => const NutritionDashboardWidget(),
              ),
+             FFRoute(
+               name: 'FoodDatabase',
+               path: 'food-database',
+               requireAuth: true,
+               builder: (context, params) => const FoodDatabaseWidget(),
+             ),
+             FFRoute(
+               name: 'EnhancedDashboard',
+               path: 'enhanced-dashboard',
+               requireAuth: true,
+               builder: (context, params) => const EnhancedDashboardWidget(),
+             ),
+             FFRoute(
+               name: 'NotificationSettings',
+               path: 'notification-settings',
+               requireAuth: true,
+               builder: (context, params) => const NotificationSettingsWidget(),
+             ),
+             FFRoute(
+               name: 'HealthStats',
+               path: 'health-stats',
+               requireAuth: true,
+               builder: (context, params) => const HealthStatsWidget(),
+             ),
             FFRoute(
               name: 'SupportCenter',
               path: 'support-center',

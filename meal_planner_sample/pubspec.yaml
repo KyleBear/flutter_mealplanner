@@ -68,6 +68,7 @@ dependencies:
   rxdart: 0.27.7
   share_plus: 9.0.0
   shared_preferences: 2.2.2
+  table_calendar: 3.0.9
   shared_preferences_android: 2.2.1
   shared_preferences_foundation: 2.3.4
   shared_preferences_platform_interface: 2.3.1
