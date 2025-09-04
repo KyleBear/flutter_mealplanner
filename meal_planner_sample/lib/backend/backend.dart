@@ -7,6 +7,9 @@ import 'schema/util/firestore_util.dart';
 
 import 'schema/users_record.dart';
 import 'schema/meals_record.dart';
+import 'schema/nutrition_goals_record.dart';
+import 'schema/nutrition_analysis_record.dart';
+import 'schema/recommendation_history_record.dart';
 import 'schema/onboarding_options_record.dart';
 import 'schema/company_information_record.dart';
 import 'schema/feedback_record.dart';
@@ -21,6 +24,9 @@ export 'schema/util/schema_util.dart';
 
 export 'schema/users_record.dart';
 export 'schema/meals_record.dart';
+export 'schema/nutrition_goals_record.dart';
+export 'schema/nutrition_analysis_record.dart';
+export 'schema/recommendation_history_record.dart';
 export 'schema/onboarding_options_record.dart';
 export 'schema/company_information_record.dart';
 export 'schema/feedback_record.dart';
@@ -95,6 +101,117 @@ Future<List<MealsRecord>> queryMealsRecordOnce({
     queryCollectionOnce(
       MealsRecord.collection,
       MealsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query NutritionGoalsRecords (as a Stream and as a Future).
+Future<int> queryNutritionGoalsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      NutritionGoalsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<NutritionGoalsRecord>> queryNutritionGoalsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      NutritionGoalsRecord.collection,
+      NutritionGoalsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<NutritionGoalsRecord>> queryNutritionGoalsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      NutritionGoalsRecord.collection,
+      NutritionGoalsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query NutritionAnalysisRecords (as a Stream and as a Future).
+Future<int> queryNutritionAnalysisRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      NutritionAnalysisRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<NutritionAnalysisRecord>> queryNutritionAnalysisRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      NutritionAnalysisRecord.collection,
+      NutritionAnalysisRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<NutritionAnalysisRecord>> queryNutritionAnalysisRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      NutritionAnalysisRecord.collection,
+      NutritionAnalysisRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query RecommendationHistoryRecords (as a Stream and as a Future).
+Future<int> queryRecommendationHistoryRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      RecommendationHistoryRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<RecommendationHistoryRecord>> queryRecommendationHistoryRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      RecommendationHistoryRecord.collection,
+      RecommendationHistoryRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<RecommendationHistoryRecord>> queryRecommendationHistoryRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      RecommendationHistoryRecord.collection,
+      RecommendationHistoryRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

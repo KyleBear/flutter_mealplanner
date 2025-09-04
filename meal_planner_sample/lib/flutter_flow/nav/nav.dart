@@ -153,12 +153,30 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
               requireAuth: true,
               builder: (context, params) => const EatingPreferencesWidget(),
             ),
-            FFRoute(
-              name: 'HealthProfile',
-              path: 'health-profile',
-              requireAuth: true,
-              builder: (context, params) => const HealthProfileWidget(),
-            ),
+                         FFRoute(
+               name: 'HealthProfile',
+               path: 'health-profile',
+               requireAuth: true,
+               builder: (context, params) => const HealthProfileWidget(),
+             ),
+             FFRoute(
+               name: 'NutritionGoals',
+               path: 'nutrition-goals',
+               requireAuth: true,
+               builder: (context, params) => const NutritionGoalsWidget(),
+             ),
+             FFRoute(
+               name: 'CalorieRecommendation',
+               path: 'calorie-recommendation',
+               requireAuth: true,
+               builder: (context, params) => const CalorieRecommendationWidget(),
+             ),
+             FFRoute(
+               name: 'NutritionDashboard',
+               path: 'nutrition-dashboard',
+               requireAuth: true,
+               builder: (context, params) => const NutritionDashboardWidget(),
+             ),
             FFRoute(
               name: 'SupportCenter',
               path: 'support-center',

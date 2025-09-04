@@ -336,75 +336,282 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ],
                                     ),
                                   ),
-                                  InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'PROFILE_PAGE_HealthProfileTile_ON_TAP');
-                                      logFirebaseEvent(
-                                          'HealthProfileTile_navigate_to');
+                                                                     InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_HealthProfileTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'HealthProfileTile_navigate_to');
 
-                                      context.pushNamed('HealthProfile');
-                                    },
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 12.0, 12.0, 12.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Container(
-                                                width: 40.0,
-                                                height: 40.0,
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .accent1,
-                                                  shape: BoxShape.circle,
-                                                ),
-                                                child: Padding(
-                                                  padding: const EdgeInsets.all(4.0),
-                                                  child: Icon(
-                                                    Icons.favorite_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    size: 20.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        18.0, 0.0, 0.0, 0.0),
-                                                child: Text(
-                                                  '건강 프로필 설정',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyLarge
-                                                      .override(
-                                                        fontFamily: 'Inter',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Divider(
-                                          thickness: 1.0,
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent4,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                                       context.pushNamed('HealthProfile');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.favorite_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '건강 프로필 설정',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_NutritionGoalsTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'NutritionGoalsTile_navigate_to');
+
+                                       context.pushNamed('NutritionGoals');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.track_changes_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '영양 목표 관리',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_CalorieRecommendationTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'CalorieRecommendationTile_navigate_to');
+
+                                       context.pushNamed('CalorieRecommendation');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.auto_awesome_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '칼로리/영양 추천',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
+                                   InkWell(
+                                     splashColor: Colors.transparent,
+                                     focusColor: Colors.transparent,
+                                     hoverColor: Colors.transparent,
+                                     highlightColor: Colors.transparent,
+                                     onTap: () async {
+                                       logFirebaseEvent(
+                                           'PROFILE_PAGE_NutritionDashboardTile_ON_TAP');
+                                       logFirebaseEvent(
+                                           'NutritionDashboardTile_navigate_to');
+
+                                       context.pushNamed('NutritionDashboard');
+                                     },
+                                     child: Column(
+                                       mainAxisSize: MainAxisSize.max,
+                                       children: [
+                                         Padding(
+                                           padding:
+                                               const EdgeInsetsDirectional.fromSTEB(
+                                                   0.0, 12.0, 12.0, 12.0),
+                                           child: Row(
+                                             mainAxisSize: MainAxisSize.max,
+                                             children: [
+                                               Container(
+                                                 width: 40.0,
+                                                 height: 40.0,
+                                                 decoration: BoxDecoration(
+                                                   color: FlutterFlowTheme.of(
+                                                           context)
+                                                       .accent1,
+                                                   shape: BoxShape.circle,
+                                                 ),
+                                                 child: Padding(
+                                                   padding: const EdgeInsets.all(4.0),
+                                                   child: Icon(
+                                                     Icons.dashboard_rounded,
+                                                     color: FlutterFlowTheme.of(
+                                                             context)
+                                                         .primary,
+                                                     size: 20.0,
+                                                   ),
+                                                 ),
+                                               ),
+                                               Padding(
+                                                 padding: const EdgeInsetsDirectional
+                                                     .fromSTEB(
+                                                         18.0, 0.0, 0.0, 0.0),
+                                                 child: Text(
+                                                   '영양 대시보드',
+                                                   style: FlutterFlowTheme.of(
+                                                           context)
+                                                       .bodyLarge
+                                                       .override(
+                                                         fontFamily: 'Inter',
+                                                         letterSpacing: 0.0,
+                                                       ),
+                                                 ),
+                                               ),
+                                             ],
+                                           ),
+                                         ),
+                                         Divider(
+                                           thickness: 1.0,
+                                           color: FlutterFlowTheme.of(context)
+                                               .accent4,
+                                         ),
+                                       ],
+                                     ),
+                                   ),
                                   if ((columnCompanyInformationRecord?.name !=
                                               null &&
                                           columnCompanyInformationRecord
